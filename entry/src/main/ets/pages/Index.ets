@@ -10,6 +10,7 @@ import { EmotionView } from './emotion/EmotionView'
 import { ExpandText } from './expandtext/ExpandText'
 import { Location } from './location/Location'
 import { MenuView } from './menu/MenuView'
+import { SwiperAnimation } from './swiperanimation/SwiperAnimation'
 
 @Entry
 @Component
@@ -20,7 +21,8 @@ struct Index {
       // Location()
       // MyEmitterComponent()
       // EmotionView()
-      MenuView()
+      // MenuView()
+      SwiperAnimation()
     }
   }
 }
