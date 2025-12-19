@@ -9,6 +9,7 @@ import { Emotion } from './emotion/EmotionImage'
 import { EmotionView } from './emotion/EmotionView'
 import { ExpandText } from './expandtext/ExpandText'
 import { Location } from './location/Location'
+import { MenuView } from './menu/MenuView'
 
 @Entry
 @Component
@@ -18,7 +19,8 @@ struct Index {
       // ExpandText()
       // Location()
       // MyEmitterComponent()
-      EmotionView()
+      // EmotionView()
+      MenuView()
     }
   }
 }
