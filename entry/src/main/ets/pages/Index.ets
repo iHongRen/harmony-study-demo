@@ -10,12 +10,15 @@ import { EmotionView } from './emotion/EmotionView'
 import { ExpandText } from './expandtext/ExpandText'
 import { Location } from './location/Location'
 import { MenuView } from './menu/MenuView'
+import { ScreenRotate } from './screenrotate/ScreenRotate'
 import { SwiperAnimation } from './swiperanimation/SwiperAnimation'
 import { WebFont } from './webfont/WebFont'
 
 @Entry
 @Component
 struct Index {
+  @State isShowPageTwo: boolean = false
+
   build() {
     Column() {
       // ExpandText()
@@ -24,7 +27,8 @@ struct Index {
       // EmotionView()
       // MenuView()
       // SwiperAnimation()
-      WebFont()
+      // WebFont()
+      ScreenRotate()
     }
   }
 }
