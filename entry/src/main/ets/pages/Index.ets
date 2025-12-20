@@ -11,6 +11,7 @@ import { ExpandText } from './expandtext/ExpandText'
 import { Location } from './location/Location'
 import { MenuView } from './menu/MenuView'
 import { SwiperAnimation } from './swiperanimation/SwiperAnimation'
+import { WebFont } from './webfont/WebFont'
 
 @Entry
 @Component
@@ -22,7 +23,8 @@ struct Index {
       // MyEmitterComponent()
       // EmotionView()
       // MenuView()
-      SwiperAnimation()
+      // SwiperAnimation()
+      WebFont()
     }
   }
 }
