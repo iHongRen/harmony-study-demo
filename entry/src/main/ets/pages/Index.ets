@@ -8,6 +8,7 @@ import { EmotionComponent } from './emotion/EmotionComponent'
 import { Emotion } from './emotion/EmotionImage'
 import { EmotionView } from './emotion/EmotionView'
 import { ExpandText } from './expandtext/ExpandText'
+import { Irrectange } from './irrectangle/Irrectangele'
 import { Location } from './location/Location'
 import { MenuView } from './menu/MenuView'
 import { ScreenRotate } from './screenrotate/ScreenRotate'
@@ -28,7 +29,8 @@ struct Index {
       // MenuView()
       // SwiperAnimation()
       // WebFont()
-      ScreenRotate()
+      // ScreenRotate()
+      Irrectange()
     }
   }
 }
