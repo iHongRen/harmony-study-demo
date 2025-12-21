@@ -11,6 +11,7 @@ import { ExpandText } from './expandtext/ExpandText'
 import { Irrectange } from './irrectangle/Irrectangele'
 import { Location } from './location/Location'
 import { MenuView } from './menu/MenuView'
+import { OssDemo } from './oss/OssDemo'
 import { ScreenRotate } from './screenrotate/ScreenRotate'
 import { SwiperAnimation } from './swiperanimation/SwiperAnimation'
 import { TranscoderDemo } from './transcoder/TranscoderDemo'
@@ -32,7 +33,8 @@ struct Index {
       // WebFont()
       // ScreenRotate()
       // Irrectange()
-      TranscoderDemo()
+      // TranscoderDemo()
+      OssDemo()
     }
   }
 }

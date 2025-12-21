@@ -23,7 +23,7 @@ export interface OSSUploadConfig {
   bucket: string;
   endpoint: string;
   objectKey: string; // 上传后的文件 key
-  file: string; // 本地文件路径
+  filePath: string; // 本地文件路径
 }
 
 /**
@@ -74,7 +74,7 @@ export class OSSUploader {
       };
     }
 
-    if (!config.bucket || !config.endpoint || !config.objectKey || !config.file) {
+    if (!config.bucket || !config.endpoint || !config.objectKey || !config.filePath) {
       return {
         success: false,
         message: '上传配置缺失：bucket/endpoint/objectKey/file 均为必填项',
@@ -86,7 +86,7 @@ export class OSSUploader {
       const uploadRes = await client.putObject({
         bucket: config.bucket,
         key: config.objectKey,
-        data: new FilePath(config.file),
+        data: new FilePath(config.filePath),
       });
       // 关闭客户端连接
       this.closeClient();

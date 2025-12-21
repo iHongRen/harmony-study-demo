@@ -51,7 +51,7 @@ export struct TranscoderDemo {
     if (!context) {
       return
     }
-    const tempDir = context.filesDir + '/'
+    const tempDir = context.tempDir + '/'
     const cacheFilePath = tempDir + 'test.mp4';
     const srcFile = fileIo.openSync(uri);
     const dstFile = fileIo.openSync(cacheFilePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
