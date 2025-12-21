@@ -13,6 +13,7 @@ import { Location } from './location/Location'
 import { MenuView } from './menu/MenuView'
 import { ScreenRotate } from './screenrotate/ScreenRotate'
 import { SwiperAnimation } from './swiperanimation/SwiperAnimation'
+import { TranscoderDemo } from './transcoder/TranscoderDemo'
 import { WebFont } from './webfont/WebFont'
 
 @Entry
@@ -30,7 +31,9 @@ struct Index {
       // SwiperAnimation()
       // WebFont()
       // ScreenRotate()
-      Irrectange()
+      // Irrectange()
+      TranscoderDemo()
     }
   }
 }
+

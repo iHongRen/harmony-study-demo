@@ -1,6 +1,7 @@
 import { AbilityConstant, common, ConfigurationConstant, UIAbility, Want } from '@kit.AbilityKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { window } from '@kit.ArkUI';
+import BuildProfile from 'BuildProfile';
 
 const DOMAIN = 0x0000;
 let abilityContext: common.UIAbilityContext
@@ -37,6 +38,20 @@ export default class EntryAbility extends UIAbility {
         return;
       }
       hilog.info(DOMAIN, 'testTag', 'Succeeded in loading the content.');
+      // 推荐在 DEBUG 模式下使用 - 动态加载
+      if (BuildProfile.DEBUG) {
+        import('@cxy/sandboxfinder').then(async (ns: ESObject) => {
+          // 默认绑定到端口 7777
+          ns.SandboxFinder.run().then((server: ESObject) => {
+            if (server.address) {
+             
+            }
+          })
+        });
+
+        // 避免服务挂起，设置不息屏
+        windowStage.getMainWindowSync().setWindowKeepScreenOn(true)
+      }
     });
   }
 
