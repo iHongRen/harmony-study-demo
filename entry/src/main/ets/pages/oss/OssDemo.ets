@@ -11,7 +11,6 @@ import { OSSToken, OSSUploadConfig, OSSUploader } from "./OssUploader";
 @Component
 export struct OssDemo {
   @State imgUrl: string = ''
-  private imagePath: string = ''
 
   build() {
     Column({ space: 30 }) {
