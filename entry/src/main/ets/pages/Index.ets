@@ -13,6 +13,7 @@ import { Location } from './location/Location'
 import { MenuView } from './menu/MenuView'
 import { OssDemo } from './oss/OssDemo'
 import { ScreenRotate } from './screenrotate/ScreenRotate'
+import { SelectableDemo } from './selectabletext/SelectableDemo'
 import { SwiperAnimation } from './swiperanimation/SwiperAnimation'
 import { TranscoderDemo } from './transcoder/TranscoderDemo'
 import { WebFont } from './webfont/WebFont'
@@ -34,7 +35,8 @@ struct Index {
       // ScreenRotate()
       // Irrectange()
       // TranscoderDemo()
-      OssDemo()
+      // OssDemo()
+      SelectableDemo()
     }
   }
 }
