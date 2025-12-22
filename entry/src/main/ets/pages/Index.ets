@@ -17,6 +17,7 @@ import { ScreenRotate } from './screenrotate/ScreenRotate'
 import { SearchDemo } from './search/SearchDemo'
 import { SelectableDemo } from './selectabletext/SelectableDemo'
 import { SwiperAnimation } from './swiperanimation/SwiperAnimation'
+import { Table } from './table/Table'
 import { TranscoderDemo } from './transcoder/TranscoderDemo'
 import { WebFont } from './webfont/WebFont'
 
@@ -40,7 +41,8 @@ struct Index {
       // OssDemo()
       // SelectableDemo()
       // SearchDemo()
-      NavbarGradient()
+      // NavbarGradient()
+      Table()
     }
   }
 }
