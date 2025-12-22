@@ -11,6 +11,7 @@ import { ExpandText } from './expandtext/ExpandText'
 import { Irrectange } from './irrectangle/Irrectangele'
 import { Location } from './location/Location'
 import { MenuView } from './menu/MenuView'
+import { NavbarGradient } from './navbargradient/NavbarGradient'
 import { OssDemo } from './oss/OssDemo'
 import { ScreenRotate } from './screenrotate/ScreenRotate'
 import { SearchDemo } from './search/SearchDemo'
@@ -38,7 +39,8 @@ struct Index {
       // TranscoderDemo()
       // OssDemo()
       // SelectableDemo()
-      SearchDemo()
+      // SearchDemo()
+      NavbarGradient()
     }
   }
 }
