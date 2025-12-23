@@ -13,6 +13,7 @@ import { Irrectange } from './irrectangle/Irrectangele'
 import { Location } from './location/Location'
 import { MenuView } from './menu/MenuView'
 import { NavbarGradient } from './navbargradient/NavbarGradient'
+import { NotificationDemo } from './notification/NotificationDemo'
 import { OssDemo } from './oss/OssDemo'
 import { ScreenRotate } from './screenrotate/ScreenRotate'
 import { SearchDemo } from './search/SearchDemo'
@@ -44,7 +45,9 @@ struct Index {
       // SearchDemo()
       // NavbarGradient()
       // Table()
-      CountDownDemo()
+      // CountDownDemo()
+
+      NotificationDemo()
     }
   }
 }

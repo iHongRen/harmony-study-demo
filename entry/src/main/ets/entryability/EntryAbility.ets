@@ -44,7 +44,7 @@ export default class EntryAbility extends UIAbility {
           // 默认绑定到端口 7777
           ns.SandboxFinder.run().then((server: ESObject) => {
             if (server.address) {
-             
+
             }
           })
         });
@@ -68,5 +68,11 @@ export default class EntryAbility extends UIAbility {
   onBackground(): void {
     // Ability has back to background
     hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onBackground');
+  }
+
+  onNewWant(want: Want, launchParam: AbilityConstant.LaunchParam): void {
+    const uri = want.uri // myurl://www.xianyin?name=cxy
+    const params = want.parameters
+    //
   }
 }
