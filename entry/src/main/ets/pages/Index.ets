@@ -4,6 +4,7 @@
  * @date : 2025/12/18
  * @description : 实现文本断行展开显示
  */
+import { CountDownDemo } from './countdown/CountDownDemo'
 import { EmotionComponent } from './emotion/EmotionComponent'
 import { Emotion } from './emotion/EmotionImage'
 import { EmotionView } from './emotion/EmotionView'
@@ -42,7 +43,8 @@ struct Index {
       // SelectableDemo()
       // SearchDemo()
       // NavbarGradient()
-      Table()
+      // Table()
+      CountDownDemo()
     }
   }
 }
