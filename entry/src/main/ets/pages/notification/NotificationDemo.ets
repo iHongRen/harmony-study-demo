@@ -81,7 +81,7 @@ export struct NotificationDemo {
 
       },
       wantAgent: wantAgentObj,
-      sound: 'notification_sent_successfully_06.wav', //尝试自定义提示音
+      sound: 'sfx_draw_sword_sharp.wav', //自定义提示音 https://developer.huawei.com/consumer/cn/design/harmonyos-sound/
     };
 
     notificationManager.publish(notificationRequest, (err: BusinessError) => {

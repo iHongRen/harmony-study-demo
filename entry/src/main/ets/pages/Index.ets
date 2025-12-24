@@ -15,6 +15,7 @@ import { MenuView } from './menu/MenuView'
 import { NavbarGradient } from './navbargradient/NavbarGradient'
 import { NotificationDemo } from './notification/NotificationDemo'
 import { OssDemo } from './oss/OssDemo'
+import { PipDemo } from './pip/PipDemo'
 import { ScreenRotate } from './screenrotate/ScreenRotate'
 import { SearchDemo } from './search/SearchDemo'
 import { SelectableDemo } from './selectabletext/SelectableDemo'
@@ -48,6 +49,8 @@ struct Index {
       // CountDownDemo()
 
       NotificationDemo()
+
+      // PipDemo()
     }
   }
 }
