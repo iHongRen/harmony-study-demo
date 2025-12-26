@@ -52,6 +52,10 @@ struct Index {
 
       // PipDemo()
     }
+    .onFocus(() => {
+      // 组件聚焦的回调
+    })
   }
 }
+
 

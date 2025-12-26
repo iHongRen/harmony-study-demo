@@ -7,11 +7,14 @@
 
 import { notificationManager } from '@kit.NotificationKit';
 import { bundleManager, common, wantAgent } from '@kit.AbilityKit';
+import { window } from '@kit.ArkUI';
 
 @Component
 export struct NotificationDemo {
+  @State isTwicePopup: boolean = false
+
   build() {
-    Stack() {
+    Column() {
       Button('触发通知')
         .onClick(() => {
           this.requestNotificationEnabled()
@@ -19,6 +22,15 @@ export struct NotificationDemo {
     }
     .width('100%')
     .height('100%')
+    .onFocus(() => {
+      // 组件聚焦的回调
+      if (this.isTwicePopup) {
+        // 做一些自己的操作
+        console.log('应用通知页面关闭')
+        // 重置组件聚焦状态
+        this.isTwicePopup = !this.isTwicePopup
+      }
+    })
   }
 
   requestNotificationEnabled() {
@@ -26,16 +38,15 @@ export struct NotificationDemo {
     // 通知是否授权
     notificationManager.isNotificationEnabled().then((data: boolean) => {
       if (!data) {
-        // 拉起通知弹窗，向用户请求通知授权。
-        // notificationManager.requestEnableNotification(context).then(() => {
-        //   this.onSendNotification()
-        // }).catch((err: BusinessError) => {
-        // });
-
-        // 拉起通知管理半模态弹窗，向用户再次申请通知授权。
-        notificationManager.openNotificationSettings(context).then(() => {
+        // 一次授权，拉起通知弹窗，向用户请求通知授权。
+        notificationManager.requestEnableNotification(context).then(() => {
           this.onSendNotification()
         }).catch((err: BusinessError) => {
+          // 二次授权，拉起通知管理半模态弹窗，向用户再次申请通知授权。
+          notificationManager.openNotificationSettings(context).then(() => {
+            this.isTwicePopup = true
+          }).catch((err: BusinessError) => {
+          });
         });
       } else {
         this.onSendNotification()
@@ -77,8 +88,7 @@ export struct NotificationDemo {
         normal: {
           title: '这是一个标题',
           text: '这是普通文本类型消息的内容',
-        },
-
+        }
       },
       wantAgent: wantAgentObj,
       sound: 'sfx_draw_sword_sharp.wav', //自定义提示音 https://developer.huawei.com/consumer/cn/design/harmonyos-sound/

@@ -4,6 +4,8 @@
  * @date : 2025/12/24
  * @description : 画中画demo
  */
+import { MyPipController } from "./MyPipController";
+import { PiPWindow } from "@kit.ArkUI";
 
 
 // xxx.ets
@@ -17,7 +19,19 @@ export struct PipDemo {
   @State showControls: boolean = true;
   @State isShortcutKeyEnabled: boolean = true;
   @State showFirstFrame: boolean = true;
-  controller: VideoController = new VideoController();
+  private controller: VideoController = new VideoController();
+  private pip: MyPipController = new MyPipController()
+
+  aboutToAppear(): void {
+
+    this.pip.onStateChange = ((state: PiPWindow.PiPState, reason: string) => {
+
+    })
+
+    this.pip.onActionEvent = ((event: PiPWindow.PiPActionEventType, status?: number) => {
+
+    })
+  }
 
   build() {
     Column() {
@@ -47,6 +61,7 @@ export struct PipDemo {
         Button('reset').onClick(() => {
           this.controller.reset(); // 重置AVPlayer。
         }).margin(2)
+
       }
     }
   }
