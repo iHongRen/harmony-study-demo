@@ -1,8 +1,8 @@
 /**
- * @fileName : ExpandText.ets
+ * @fileName : Index.ets
  * @author : @cxy
  * @date : 2025/12/18
- * @description : 实现文本断行展开显示
+ * @description : harmonyos=study-demo
  */
 import { CountDownDemo } from './countdown/CountDownDemo'
 import { EmotionComponent } from './emotion/EmotionComponent'
@@ -23,12 +23,11 @@ import { SwiperAnimation } from './swiperanimation/SwiperAnimation'
 import { Table } from './table/Table'
 import { TranscoderDemo } from './transcoder/TranscoderDemo'
 import { WebFont } from './webfont/WebFont'
+import { emitter } from '@kit.BasicServicesKit'
 
 @Entry
 @Component
 struct Index {
-  @State isShowPageTwo: boolean = false
-
   build() {
     Column() {
       // ExpandText()
@@ -54,6 +53,7 @@ struct Index {
     }
     .onFocus(() => {
       // 组件聚焦的回调
+      emitter.emit('IndexFocus')
     })
   }
 }

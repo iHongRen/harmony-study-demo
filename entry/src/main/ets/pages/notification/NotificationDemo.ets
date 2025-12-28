@@ -7,11 +7,19 @@
 
 import { notificationManager } from '@kit.NotificationKit';
 import { bundleManager, common, wantAgent } from '@kit.AbilityKit';
-import { window } from '@kit.ArkUI';
+import { emitter } from '@kit.BasicServicesKit';
 
 @Component
 export struct NotificationDemo {
   @State isTwicePopup: boolean = false
+
+  aboutToAppear(): void {
+    emitter.on('IndexFocus', this.IndexFocusCallback)
+  }
+
+  aboutToDisappear(): void {
+    emitter.off('IndexFocus', this.IndexFocusCallback)
+  }
 
   build() {
     Column() {
@@ -22,15 +30,6 @@ export struct NotificationDemo {
     }
     .width('100%')
     .height('100%')
-    .onFocus(() => {
-      // 组件聚焦的回调
-      if (this.isTwicePopup) {
-        // 做一些自己的操作
-        console.log('应用通知页面关闭')
-        // 重置组件聚焦状态
-        this.isTwicePopup = !this.isTwicePopup
-      }
-    })
   }
 
   requestNotificationEnabled() {
@@ -99,5 +98,17 @@ export struct NotificationDemo {
         return;
       }
     });
+  }
+
+  private IndexFocusCallback = () => {
+    // 组件聚焦的回调
+    if (this.isTwicePopup) {
+      notificationManager.isNotificationEnabled().then((data: boolean) => {
+        if (data) {
+          this.onSendNotification()
+        }
+      })
+      this.isTwicePopup = !this.isTwicePopup
+    }
   }
 }
