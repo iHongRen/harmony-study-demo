@@ -58,6 +58,12 @@ export class MyPipController {
     }
   }
 
+  updatePiPControlStatus(status: PiPWindow.PiPControlStatus) {
+    if (this.pip) {
+      this.pip.updatePiPControlStatus(PiPWindow.PiPControlType.VIDEO_PLAY_PAUSE, status);
+    }
+  }
+
   // 步骤4：当不再需要显示画中画时，通过stopPiP接口关闭画中画
   async stopPip() {
     if (this.pip) {

@@ -47,9 +47,9 @@ struct Index {
       // Table()
       // CountDownDemo()
 
-      NotificationDemo()
+      // NotificationDemo()
 
-      // PipDemo()
+      PipDemo()
     }
     .onFocus(() => {
       // 组件聚焦的回调
