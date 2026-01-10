@@ -33,7 +33,7 @@ struct Index {
       // ExpandText()
       // Location()
       // MyEmitterComponent()
-      // EmotionView()
+      EmotionView()
       // MenuView()
       // SwiperAnimation()
       // WebFont()
@@ -49,7 +49,7 @@ struct Index {
 
       // NotificationDemo()
 
-      PipDemo()
+      // PipDemo()
     }
     .onFocus(() => {
       // 组件聚焦的回调
