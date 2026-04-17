@@ -24,6 +24,7 @@ import { Table } from './table/Table'
 import { TranscoderDemo } from './transcoder/TranscoderDemo'
 import { WebFont } from './webfont/WebFont'
 import { emitter } from '@kit.BasicServicesKit'
+import { BlurDemo } from './blur/BlurDemo'
 
 @Entry
 @Component
@@ -33,7 +34,7 @@ struct Index {
       // ExpandText()
       // Location()
       // MyEmitterComponent()
-      EmotionView()
+      // EmotionView()
       // MenuView()
       // SwiperAnimation()
       // WebFont()
@@ -50,6 +51,7 @@ struct Index {
       // NotificationDemo()
 
       // PipDemo()
+      BlurDemo()
     }
     .onFocus(() => {
       // 组件聚焦的回调
