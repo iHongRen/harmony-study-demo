@@ -218,6 +218,21 @@
 - 动态计算位移与模糊半径
 - 支持手势冲突处理与动画回弹
 
+
+### 23. [MaskShape 图形 (MaskShape)](./entry/src/main/ets/pages/maskshape/)
+实现带斜切、圆角、渐变的自定义图形效果。
+
+![MaskShape图形效果](./entry/src/main/ets/pages/maskshape/maskshape.gif)
+
+**核心技术点：**
+- 使用 maskShape + PathShape 实现自定义形状遮罩
+- SVG 路径命令绘制带斜切和圆角的形状
+- 二次贝塞尔曲线（Q 命令）实现圆角过渡
+- Shape + Path 实现描边与遮罩同步
+- vp2px 单位转换适配动态尺寸
+- linearGradient 渐变填充
+
+  
 ## 项目结构
 
 ```
@@ -250,6 +265,7 @@ harmony-study-demo/
 │   │       │       ├── swiperanimation/       # Swiper动画示例
 │   │       │       ├── table/                 # 表格布局示例
 │   │       │       ├── transcoder/            # 视频转码示例
+│   │       │       ├── maskshape/             # MaskShape图形示例
 │   │       │       └── webfont/               # Web字体示例
 │   │       └── resources/      # 模块资源文件
 │   └── oh-package.json5        # 模块依赖配置

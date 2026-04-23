@@ -25,6 +25,7 @@ import { TranscoderDemo } from './transcoder/TranscoderDemo'
 import { WebFont } from './webfont/WebFont'
 import { emitter } from '@kit.BasicServicesKit'
 import { BlurDemo } from './blur/BlurDemo'
+import { MaskShapeSvg } from './maskshape/MaskShapeSvg'
 
 @Entry
 @Component
@@ -51,7 +52,8 @@ struct Index {
       // NotificationDemo()
 
       // PipDemo()
-      BlurDemo()
+      // BlurDemo()
+      MaskShapeSvg()
     }
     .onFocus(() => {
       // 组件聚焦的回调
