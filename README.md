@@ -233,6 +233,15 @@
 - linearGradient 渐变填充
 
   
+  
+### 24. [Tab嵌套Scroll](./entry/src/main/ets/page/tabscroll)
+Tab 嵌套 Scroll 使用左右滑动冲突解决
+
+![](./entry/src/main/ets/pages/tabscroll/tabscroll.gif)
+
+
+
+
 ## 项目结构
 
 ```
