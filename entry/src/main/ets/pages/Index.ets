@@ -27,6 +27,7 @@ import { emitter } from '@kit.BasicServicesKit'
 import { BlurDemo } from './blur/BlurDemo'
 import { MaskShapeSvg } from './maskshape/MaskShapeSvg'
 import { TabScroll } from './tabscroll/tabscroll'
+import { PullDownHeaderDemo } from './pulldownheader/PullDownHeader'
 
 @Entry
 @Component
@@ -55,7 +56,9 @@ struct Index {
       // PipDemo()
       // BlurDemo()
       // MaskShapeSvg()
-      TabScroll()
+      // TabScroll()
+
+      PullDownHeaderDemo()
     }
     .onFocus(() => {
       // 组件聚焦的回调
