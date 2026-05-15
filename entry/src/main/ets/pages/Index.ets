@@ -28,6 +28,8 @@ import { BlurDemo } from './blur/BlurDemo'
 import { MaskShapeSvg } from './maskshape/MaskShapeSvg'
 import { TabScroll } from './tabscroll/tabscroll'
 import { PullDownHeaderDemo } from './pulldownheader/PullDownHeader'
+import { HdsTabDemo } from './hdstab/HdsTab'
+import { SaveFileToDoc } from './savefile/SaveFileToDoc'
 
 @Entry
 @Component
@@ -58,7 +60,9 @@ struct Index {
       // MaskShapeSvg()
       // TabScroll()
 
-      PullDownHeaderDemo()
+      // PullDownHeaderDemo()
+      // HdsTabDemo()
+      SaveFileToDoc()
     }
     .onFocus(() => {
       // 组件聚焦的回调
