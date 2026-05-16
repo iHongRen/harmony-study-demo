@@ -239,8 +239,52 @@ Tab 嵌套 Scroll 使用左右滑动冲突解决
 
 ![](./entry/src/main/ets/pages/tabscroll/tabscroll.gif)
 
+### 25. [Canvas 绘图与保存图片 (Canvas)](./entry/src/main/ets/pages/canvas/)
+使用 Canvas 进行离屏绘图并保存到相册。
 
+**核心技术点：**
+- 使用 OffscreenCanvas 实现离屏渲染
+- CanvasRenderingContext2D 绘制图形和文字
+- 使用 image.ImagePacker 将 PixelMap 打包为 PNG
+- 通过 photoAccessHelper 保存到系统相册
 
+### 26. [HDS Tab 底部导航栏 (HdsTab)](./entry/src/main/ets/pages/hdstab/)
+基于 UIDesignKit 实现 HDS 规范的底部 Tab 导航栏。
+
+**核心技术点：**
+- 使用 HdsNavigation + HdsTabs 构建标准底部导航
+- barFloatingStyle 实现悬浮式底部栏
+- 自定义 TabBar 样式（问AI按钮特殊处理）
+- onContentWillChange 拦截 Tab 切换
+
+### 27. [图片加载与尺寸适配 (ImageLoad)](./entry/src/main/ets/pages/imageload/)
+通过网络请求加载图片并自动适配显示尺寸。
+
+**核心技术点：**
+- 使用 http 模块发起网络请求
+- image.createImageSource 解析 ArrayBuffer 为图片
+- 根据宽高比自动计算适配尺寸
+- 区分宽图、高图、方图的不同缩放策略
+
+### 28. [下拉放大 Header (PullDownHeader)](./entry/src/main/ets/pages/pulldownheader/)
+实现列表下拉时 Header 图片放大回弹效果。
+
+![下拉放大Header效果](./entry/src/main/ets/pages/pulldownheader/pulldownheader.gif)
+
+**核心技术点：**
+- 监听 List onDidScroll 实现下拉距离计算
+- 动态 scale 和 height 实现放大效果
+- onScrollStop 回弹动画恢复
+- Stack 布局实现 Header 悬浮覆盖
+
+### 29. [沙箱文件夹压缩导出 (SaveFile)](./entry/src/main/ets/pages/savefile/)
+实现沙箱目录浏览、文件夹压缩并导出到手机存储。
+
+**核心技术点：**
+- 沙箱目录浏览与导航
+- zlib.compressFile 压缩文件夹为 zip
+- DocumentViewPicker 选择保存路径
+- 文件读写与临时文件清理
 
 ## 项目结构
 
@@ -255,26 +299,33 @@ harmony-study-demo/
 │   │       ├── ets/
 │   │       │   └── pages/      # 页面目录
 │   │       │       ├── Index.ets              # 主入口页面
+│   │       │       ├── canvas/                # Canvas绘图示例
 │   │       │       ├── countdown/             # 倒计时示例
+│   │       │       ├── dayjs/                 # 日期处理示例
 │   │       │       ├── emotion/               # 表情面板示例
 │   │       │       ├── expandtext/            # 文本展开示例
+│   │       │       ├── hdstab/                # HDS Tab导航示例
+│   │       │       ├── imageload/             # 图片加载示例
 │   │       │       ├── irrectangle/           # 异形Banner示例
 │   │       │       ├── location/              # 位置信息示例
+│   │       │       ├── maskshape/             # MaskShape图形示例
 │   │       │       ├── menu/                  # 金刚区示例
 │   │       │       ├── myemitter/             # 自定义Emitter示例
 │   │       │       ├── navbargradient/        # 导航栏渐变示例
 │   │       │       ├── notification/          # 通知示例
 │   │       │       ├── oss/                   # OSS上传示例
 │   │       │       ├── pip/                   # 画中画示例
+│   │       │       ├── pulldownheader/        # 下拉放大Header示例
 │   │       │       ├── router/                # 路由示例
+│   │       │       ├── savefile/              # 沙箱导出示例
 │   │       │       ├── scan/                  # 扫描示例
 │   │       │       ├── screenrotate/          # 横竖屏切换示例
 │   │       │       ├── search/                # 搜索高亮示例
 │   │       │       ├── selectabletext/        # 文本选择示例
 │   │       │       ├── swiperanimation/       # Swiper动画示例
 │   │       │       ├── table/                 # 表格布局示例
+│   │       │       ├── tabscroll/             # Tab嵌套Scroll示例
 │   │       │       ├── transcoder/            # 视频转码示例
-│   │       │       ├── maskshape/             # MaskShape图形示例
 │   │       │       └── webfont/               # Web字体示例
 │   │       └── resources/      # 模块资源文件
 │   └── oh-package.json5        # 模块依赖配置
