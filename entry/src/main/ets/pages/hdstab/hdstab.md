@@ -2,6 +2,8 @@
 
 基于 UIDesignKit 实现符合 HDS (HarmonyOS Design System) 规范的底部 Tab 导航栏。
 
+![](./hdstab.gif)
+
 ## 功能说明
 
 - 底部悬浮式 Tab 导航栏

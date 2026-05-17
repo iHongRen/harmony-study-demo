@@ -251,6 +251,8 @@ Tab 嵌套 Scroll 使用左右滑动冲突解决
 ### 26. [HDS Tab 底部导航栏 (HdsTab)](./entry/src/main/ets/pages/hdstab/)
 基于 UIDesignKit 实现 HDS 规范的底部 Tab 导航栏。
 
+![HDS Tab 底部导航栏效果](./entry/src/main/ets/pages/hdstab/hdstab.gif)
+
 **核心技术点：**
 - 使用 HdsNavigation + HdsTabs 构建标准底部导航
 - barFloatingStyle 实现悬浮式底部栏
@@ -279,6 +281,8 @@ Tab 嵌套 Scroll 使用左右滑动冲突解决
 
 ### 29. [沙箱文件夹压缩导出 (SaveFile)](./entry/src/main/ets/pages/savefile/)
 实现沙箱目录浏览、文件夹压缩并导出到手机存储。
+
+![沙箱文件夹压缩导出效果](./entry/src/main/ets/pages/savefile/savefile.gif)
 
 **核心技术点：**
 - 沙箱目录浏览与导航
