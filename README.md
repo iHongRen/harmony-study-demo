@@ -1,6 +1,6 @@
 # HarmonyOS 学习示例项目
 
-这是一个 HarmonyOS 应用开发学习项目，包含了多个实用的功能示例和最佳实践。每个示例都提供了完整的实现代码和详细的说明文档。
+这是一个 HarmonyOS 应用开发学习项目，包含了多个实用的功能示例。每个示例都提供了完整的实现代码和详细的说明文档。
 
 
 
@@ -118,15 +118,7 @@
 - 页面跳转和参数传递
 - 路由拦截和权限控制
 
-### 13. [二维码扫描 (Scan)](./entry/src/main/ets/pages/scan/)
-实现二维码和条形码扫描功能。
-
-**核心技术点：**
-- 相机权限申请
-- 扫描识别算法
-- 扫描结果处理
-
-### 14. [横竖屏切换 (ScreenRotate)](./entry/src/main/ets/pages/screenrotate/)
+### 13. [横竖屏切换 (ScreenRotate)](./entry/src/main/ets/pages/screenrotate/)
 实现视频播放或图表展示时的横竖屏切换。
 
 ![横竖屏切换效果](./entry/src/main/ets/pages/screenrotate/screenrotate.gif)
@@ -136,7 +128,7 @@
 - 沉浸式全屏效果
 - 横竖屏不同布局适配
 
-### 15. [搜索高亮 (Search)](./entry/src/main/ets/pages/search/)
+### 14. [搜索高亮 (Search)](./entry/src/main/ets/pages/search/)
 实现搜索关键词高亮显示功能。
 
 ![搜索高亮效果](./entry/src/main/ets/pages/search/search.gif)
@@ -146,7 +138,7 @@
 - 关键词拆分和节点生成
 - 使用 Text + Span 实现高亮效果
 
-### 16. [文本选择菜单 (SelectableText)](./entry/src/main/ets/pages/selectabletext/)
+### 15. [文本选择菜单 (SelectableText)](./entry/src/main/ets/pages/selectabletext/)
 实现聊天消息的长按选择和复制功能。
 
 ![文本选择菜单效果](./entry/src/main/ets/pages/selectabletext/selectable.gif)
@@ -156,7 +148,7 @@
 - 自定义选择菜单项
 - 支持文本选择和全选
 
-### 17. [Swiper 动画 (SwiperAnimation)](./entry/src/main/ets/pages/swiperanimation/)
+### 16. [Swiper 动画 (SwiperAnimation)](./entry/src/main/ets/pages/swiperanimation/)
 实现中间放大、两边缩小的轮播图效果。
 
 ![Swiper动画效果](./entry/src/main/ets/pages/swiperanimation/swiperanimation.gif)
@@ -166,7 +158,7 @@
 - 动态计算缩放比例和透明度
 - 平滑的过渡效果
 
-### 18. [表格布局 (Table)](./entry/src/main/ets/pages/table/)
+### 17. [表格布局 (Table)](./entry/src/main/ets/pages/table/)
 实现支持上下左右滚动的表格布局。
 
 ![表格布局效果](./entry/src/main/ets/pages/table/table.gif)
@@ -177,7 +169,7 @@
 - 表头吸顶效果
 - 左右滚动同步
 
-### 19. [视频转码 (Transcoder)](./entry/src/main/ets/pages/transcoder/)
+### 18. [视频转码 (Transcoder)](./entry/src/main/ets/pages/transcoder/)
 实现 HDR 视频转 SDR 视频的功能。
 
 ![视频转码效果](./entry/src/main/ets/pages/transcoder/transcoder.gif)
@@ -188,7 +180,7 @@
 - 转码进度监听
 - 文件大小对比
 
-### 20. [Web 字体调整 (WebFont)](./entry/src/main/ets/pages/webfont/)
+### 19. [Web 字体调整 (WebFont)](./entry/src/main/ets/pages/webfont/)
 实现 Web 资讯页面的字体大小动态调整。
 
 ![Web字体调整效果](./entry/src/main/ets/pages/webfont/webfont.gif)
@@ -198,16 +190,7 @@
 - 通过 textZoomRatio 调整 Web 字体
 - 半模态弹窗交互
 
-### 21. [日期时间处理 (Dayjs)](./entry/src/main/ets/pages/dayjs/)
-日期时间处理相关功能示例。
-
-**核心技术点：**
-- 日期格式化和解析
-- 时间计算和比较
-- 国际化时间显示
-
-
-### 22. [负一屏 (Blur)](./entry/src/main/ets/pages/blur/)
+### 20. [负一屏 (Blur)](./entry/src/main/ets/pages/blur/)
 实现从主屏向右滑动打开的负一屏展示效果。
 
 ![负一屏效果](./entry/src/main/ets/pages/blur/blur.gif)
@@ -219,7 +202,7 @@
 - 支持手势冲突处理与动画回弹
 
 
-### 23. [MaskShape 图形 (MaskShape)](./entry/src/main/ets/pages/maskshape/)
+### 21. [MaskShape 图形 (MaskShape)](./entry/src/main/ets/pages/maskshape/)
 实现带斜切、圆角、渐变的自定义图形效果。
 
 ![MaskShape图形效果](./entry/src/main/ets/pages/maskshape/maskshape.gif)
@@ -234,12 +217,12 @@
 
   
   
-### 24. [Tab嵌套Scroll](./entry/src/main/ets/page/tabscroll)
+### 22. [Tab嵌套Scroll](./entry/src/main/ets/pages/tabscroll)
 Tab 嵌套 Scroll 使用左右滑动冲突解决
 
 ![](./entry/src/main/ets/pages/tabscroll/tabscroll.gif)
 
-### 25. [Canvas 绘图与保存图片 (Canvas)](./entry/src/main/ets/pages/canvas/)
+### 23. [Canvas 绘图与保存图片 (Canvas)](./entry/src/main/ets/pages/canvas/)
 使用 Canvas 进行离屏绘图并保存到相册。
 
 **核心技术点：**
@@ -248,7 +231,7 @@ Tab 嵌套 Scroll 使用左右滑动冲突解决
 - 使用 image.ImagePacker 将 PixelMap 打包为 PNG
 - 通过 photoAccessHelper 保存到系统相册
 
-### 26. [HDS Tab 底部导航栏 (HdsTab)](./entry/src/main/ets/pages/hdstab/)
+### 24. [HDS Tab 底部导航栏 (HdsTab)](./entry/src/main/ets/pages/hdstab/)
 基于 UIDesignKit 实现 HDS 规范的底部 Tab 导航栏。
 
 ![HDS Tab 底部导航栏效果](./entry/src/main/ets/pages/hdstab/hdstab.gif)
@@ -259,7 +242,7 @@ Tab 嵌套 Scroll 使用左右滑动冲突解决
 - 自定义 TabBar 样式（问AI按钮特殊处理）
 - onContentWillChange 拦截 Tab 切换
 
-### 27. [图片加载与尺寸适配 (ImageLoad)](./entry/src/main/ets/pages/imageload/)
+### 25. [图片加载与尺寸适配 (ImageLoad)](./entry/src/main/ets/pages/imageload/)
 通过网络请求加载图片并自动适配显示尺寸。
 
 **核心技术点：**
@@ -268,7 +251,7 @@ Tab 嵌套 Scroll 使用左右滑动冲突解决
 - 根据宽高比自动计算适配尺寸
 - 区分宽图、高图、方图的不同缩放策略
 
-### 28. [下拉放大 Header (PullDownHeader)](./entry/src/main/ets/pages/pulldownheader/)
+### 26. [下拉放大 Header (PullDownHeader)](./entry/src/main/ets/pages/pulldownheader/)
 实现列表下拉时 Header 图片放大回弹效果。
 
 ![下拉放大Header效果](./entry/src/main/ets/pages/pulldownheader/pulldownheader.gif)
@@ -279,7 +262,7 @@ Tab 嵌套 Scroll 使用左右滑动冲突解决
 - onScrollStop 回弹动画恢复
 - Stack 布局实现 Header 悬浮覆盖
 
-### 29. [沙箱文件夹压缩导出 (SaveFile)](./entry/src/main/ets/pages/savefile/)
+### 27. [沙箱文件夹压缩导出 (SaveFile)](./entry/src/main/ets/pages/savefile/)
 实现沙箱目录浏览、文件夹压缩并导出到手机存储。
 
 ![沙箱文件夹压缩导出效果](./entry/src/main/ets/pages/savefile/savefile.gif)
@@ -303,9 +286,9 @@ harmony-study-demo/
 │   │       ├── ets/
 │   │       │   └── pages/      # 页面目录
 │   │       │       ├── Index.ets              # 主入口页面
+│   │       │       ├── blur/                  # 负一屏示例
 │   │       │       ├── canvas/                # Canvas绘图示例
 │   │       │       ├── countdown/             # 倒计时示例
-│   │       │       ├── dayjs/                 # 日期处理示例
 │   │       │       ├── emotion/               # 表情面板示例
 │   │       │       ├── expandtext/            # 文本展开示例
 │   │       │       ├── hdstab/                # HDS Tab导航示例
@@ -322,7 +305,6 @@ harmony-study-demo/
 │   │       │       ├── pulldownheader/        # 下拉放大Header示例
 │   │       │       ├── router/                # 路由示例
 │   │       │       ├── savefile/              # 沙箱导出示例
-│   │       │       ├── scan/                  # 扫描示例
 │   │       │       ├── screenrotate/          # 横竖屏切换示例
 │   │       │       ├── search/                # 搜索高亮示例
 │   │       │       ├── selectabletext/        # 文本选择示例
@@ -349,7 +331,7 @@ harmony-study-demo/
 
 ## 注意事项
 
-1. 部分功能需要真机测试，模拟器可能不支持（如位置信息、扫描等）
+1. 部分功能需要真机测试，模拟器可能不支持（如位置信息等）
 2. OSS 上传功能需要配置自己的阿里云账号信息
 3. 视频转码功能需要设备支持 AVTranscoder 能力
 4. 使用前请确保已申请相应的权限（位置、相机、存储等）
