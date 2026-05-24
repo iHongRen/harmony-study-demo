@@ -8,9 +8,8 @@
 import { http } from '@kit.NetworkKit'
 import { image } from '@kit.ImageKit'
 
-@Entry
 @Component
-struct Index {
+export struct ImageLoadDemo {
   @State imageWidth: number = 0
   @State imageHeight: number = 0
   @State pixel: image.PixelMap | undefined = undefined

@@ -1,0 +1,134 @@
+{
+  "routerMap": [
+    {
+      "name": "CountDownDemo",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "CountDownDemoBuilder"
+    },
+    {
+      "name": "EmotionView",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "EmotionViewBuilder"
+    },
+    {
+      "name": "ExpandText",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "ExpandTextBuilder"
+    },
+    {
+      "name": "Irrectange",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "IrrectangeBuilder"
+    },
+    {
+      "name": "Location",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "LocationBuilder"
+    },
+    {
+      "name": "MenuView",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "MenuViewBuilder"
+    },
+    {
+      "name": "MyEmitterComponent",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "MyEmitterComponentBuilder"
+    },
+    {
+      "name": "NavbarGradient",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "NavbarGradientBuilder"
+    },
+    {
+      "name": "NotificationDemo",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "NotificationDemoBuilder"
+    },
+    {
+      "name": "OssDemo",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "OssDemoBuilder"
+    },
+    {
+      "name": "PipDemo",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "PipDemoBuilder"
+    },
+    {
+      "name": "ScreenRotate",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "ScreenRotateBuilder"
+    },
+    {
+      "name": "SearchDemo",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "SearchDemoBuilder"
+    },
+    {
+      "name": "SelectableDemo",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "SelectableDemoBuilder"
+    },
+    {
+      "name": "SwiperAnimation",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "SwiperAnimationBuilder"
+    },
+    {
+      "name": "Table",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "TableBuilder"
+    },
+    {
+      "name": "TranscoderDemo",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "TranscoderDemoBuilder"
+    },
+    {
+      "name": "WebFont",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "WebFontBuilder"
+    },
+    {
+      "name": "BlurDemo",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "BlurDemoBuilder"
+    },
+    {
+      "name": "MaskShapeSvg",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "MaskShapeSvgBuilder"
+    },
+    {
+      "name": "TabScroll",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "TabScrollBuilder"
+    },
+    {
+      "name": "CanvasImage",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "CanvasImageBuilder"
+    },
+    {
+      "name": "HdsTabDemo",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "HdsTabDemoBuilder"
+    },
+    {
+      "name": "ImageLoadDemo",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "ImageLoadDemoBuilder"
+    },
+    {
+      "name": "PullDownHeaderDemo",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "PullDownHeaderDemoBuilder"
+    },
+    {
+      "name": "SaveFileToDoc",
+      "pageSourceFile": "src/main/ets/pages/Index.ets",
+      "buildFunction": "SaveFileToDocBuilder"
+    }
+  ]
+}

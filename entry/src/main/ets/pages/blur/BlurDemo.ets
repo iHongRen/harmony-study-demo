@@ -6,7 +6,6 @@
  */
 import { display, window } from "@kit.ArkUI"
 
-@Entry
 @Component
 export struct BlurDemo {
   @State private translateX: number = 0

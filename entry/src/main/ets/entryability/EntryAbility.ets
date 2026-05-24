@@ -37,6 +37,12 @@ export default class EntryAbility extends UIAbility {
         hilog.error(DOMAIN, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err));
         return;
       }
+
+      // 开启沉浸式全屏
+      windowStage.getMainWindow().then((win) => {
+        win.setWindowLayoutFullScreen(true)
+      })
+
       hilog.info(DOMAIN, 'testTag', 'Succeeded in loading the content.');
       // 推荐在 DEBUG 模式下使用 - 动态加载
       if (BuildProfile.DEBUG) {
