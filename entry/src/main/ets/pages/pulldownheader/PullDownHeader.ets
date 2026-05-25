@@ -65,6 +65,7 @@ export struct PullDownHeaderDemo {
       .clip(true)
       .translate({ y: this.headerTranslateY })
     }
+    .clip(true)
   }
 
   private handleScroll(): void {

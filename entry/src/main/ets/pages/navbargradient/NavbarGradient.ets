@@ -5,6 +5,7 @@
  * @description : 导航栏沉浸式渐变效果
  */
 import { window } from "@kit.ArkUI";
+import { Navbar } from "../Navbar";
 
 @Component
 export struct NavbarGradient {
@@ -76,21 +77,9 @@ export struct NavbarGradient {
 
   @Builder
   navbar() {
-    Row() {
-      Row() {
-        Text('导航栏')
-          .fontSize(18)
-          .fontWeight(FontWeight.Medium)
-      }
-      .justifyContent(FlexAlign.Center)
-      .width('100%')
-      .height(44)
-    }
-    .backgroundColor('#fff')
-    .opacity(this.navOpacity)
-    .width('100%')
-    .height(this.getNavHeight())
-    .padding({ top: this.topAreaHeight })
+    Navbar({ title: '导航栏' })
+      .backgroundColor('#fff')
+      .opacity(this.navOpacity)
   }
 
   getNavHeight(): number {

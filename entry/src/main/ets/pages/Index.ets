@@ -30,190 +30,242 @@ import { SaveFileToDoc } from './savefile/SaveFileToDoc'
 import { ImageLoadDemo } from './imageload/ImageLoad'
 import { CanvasImage } from './canvas/CanvasImage'
 import { MyEmitterComponent } from './myemitter/myemitter'
+import { Navbar } from './Navbar'
+import { RouterInfo, XRouter } from './router/XRouter'
 
 // Global @Builder functions for routerMap - each wraps component in NavDestination
 @Builder
 function CountDownDemoBuilder() {
   NavDestination() {
+    Navbar({ title: '倒计时按钮' })
     CountDownDemo()
   }
-  .hideTitleBar(false)
-  .title('倒计时按钮')
+  .hideTitleBar(true)
 }
 
 @Builder
 function EmotionViewBuilder() {
   NavDestination() {
-    EmotionView()
-  }.title('表情面板')
+    Navbar({ title: '表情面板' })
+    EmotionView().layoutWeight(1)
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function ExpandTextBuilder() {
   NavDestination() {
+    Navbar({ title: '文本展开收起' })
     ExpandText()
-  }.title('文本展开收起')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function IrrectangeBuilder() {
   NavDestination() {
+    Navbar({ title: '异形Banner' })
     Irrectange()
-  }.title('异形Banner')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function LocationBuilder() {
   NavDestination() {
+    Navbar({ title: '位置信息获取' })
     Location()
-  }.title('位置信息获取')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function MenuViewBuilder() {
   NavDestination() {
+    Navbar({ title: '金刚区菜单' })
     MenuView()
-  }.title('金刚区菜单')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function MyEmitterComponentBuilder() {
   NavDestination() {
+    Navbar({ title: '自定义Emitter' })
     MyEmitterComponent()
-  }.title('自定义Emitter')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function NavbarGradientBuilder() {
   NavDestination() {
+    // Navbar({ title: '导航栏渐变' })
     NavbarGradient()
-  }.title('导航栏渐变')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function NotificationDemoBuilder() {
   NavDestination() {
+    Navbar({ title: '本地通知' })
     NotificationDemo()
-  }.title('本地通知')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function OssDemoBuilder() {
   NavDestination() {
+    Navbar({ title: 'OSS文件上传' })
     OssDemo()
-  }.title('OSS文件上传')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function PipDemoBuilder() {
   NavDestination() {
-    PipDemo()
-  }.title('画中画')
+    Navbar({ title: '画中画' })
+    PipDemo().layoutWeight(1)
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function ScreenRotateBuilder() {
   NavDestination() {
-    ScreenRotate()
-  }.title('横竖屏切换')
+    Navbar({ title: '横竖屏切换' })
+    ScreenRotate().layoutWeight(1)
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function SearchDemoBuilder() {
   NavDestination() {
+    Navbar({ title: '搜索高亮' })
     SearchDemo()
-  }.title('搜索高亮')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function SelectableDemoBuilder() {
   NavDestination() {
+    Navbar({ title: '文本选择菜单' })
     SelectableDemo()
-  }.title('文本选择菜单')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function SwiperAnimationBuilder() {
   NavDestination() {
+    Navbar({ title: 'Swiper动画' })
     SwiperAnimation()
-  }.title('Swiper动画')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function TableBuilder() {
   NavDestination() {
-    Table()
-  }.title('表格布局')
+    Navbar({ title: '表格布局' })
+    Table().layoutWeight(1)
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function TranscoderDemoBuilder() {
   NavDestination() {
+    Navbar({ title: '视频转码' })
     TranscoderDemo()
-  }.title('视频转码')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function WebFontBuilder() {
   NavDestination() {
-    WebFont()
-  }.title('Web字体调整')
+    Navbar({ title: 'Web字体调整' })
+    WebFont().layoutWeight(1)
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function BlurDemoBuilder() {
   NavDestination() {
-    BlurDemo()
-  }.title('负一屏')
+    Navbar({ title: '负一屏' })
+    BlurDemo().layoutWeight(1)
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function MaskShapeSvgBuilder() {
   NavDestination() {
+    Navbar({ title: 'MaskShape图形' })
     MaskShapeSvg()
-  }.title('MaskShape图形')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function TabScrollBuilder() {
   NavDestination() {
-    TabScroll()
-  }.title('Tab嵌套Scroll')
+    Navbar({ title: 'Tab嵌套Scroll' })
+    TabScroll().layoutWeight(1)
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function CanvasImageBuilder() {
   NavDestination() {
+    Navbar({ title: 'Canvas绘图' })
     CanvasImage()
-  }.title('Canvas绘图')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function HdsTabDemoBuilder() {
   NavDestination() {
-    HdsTabDemo()
-  }.title('HDS Tab导航栏')
+    Navbar({ title: 'HDS Tab导航栏' })
+    HdsTabDemo().layoutWeight(1)
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function ImageLoadDemoBuilder() {
   NavDestination() {
+    Navbar({ title: '图片加载' })
     ImageLoadDemo()
-  }.title('图片加载')
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function PullDownHeaderDemoBuilder() {
   NavDestination() {
-    PullDownHeaderDemo()
-  }.title('下拉放大Header')
+    Navbar({ title: '下拉放大Header' })
+    PullDownHeaderDemo().layoutWeight(1)
+  }
+  .hideTitleBar(true)
 }
 
 @Builder
 function SaveFileToDocBuilder() {
   NavDestination() {
-    SaveFileToDoc()
-  }.title('沙箱文件夹压缩导出')
+    Navbar({ title: '沙箱文件夹压缩导出' })
+    SaveFileToDoc().layoutWeight(1)
+  }
+  .hideTitleBar(true)
 }
 
 interface DemoItem {
@@ -225,7 +277,9 @@ interface DemoItem {
 @Entry
 @Component
 struct Index {
-  private pathStack: NavPathStack = new NavPathStack()
+  @StorageProp('topHeight') topHeight: number = 0
+  @StorageProp('bottomHeight') bottomHeight: number = 0
+  private pathStack: NavPathStack = XRouter.getRouter()
   private demoList: DemoItem[] = [
     { title: '倒计时按钮', desc: '发送验证码倒计时', routeName: 'CountDownDemo' },
     { title: '表情面板', desc: 'Emoji和图片表情选择', routeName: 'EmotionView' },
@@ -257,6 +311,8 @@ struct Index {
 
   build() {
     Navigation(this.pathStack) {
+      Navbar({ title: 'HarmonyOS 学习示例' })
+
       List() {
         ForEach(this.demoList, (item: DemoItem) => {
           ListItem() {
@@ -288,10 +344,12 @@ struct Index {
             })
           }
           .onClick(() => {
-            this.pathStack.pushPath({ name: item.routeName })
+            const routerInfo: RouterInfo = { name: item.routeName }
+            XRouter.push(routerInfo)
           })
         }, (item: DemoItem) => item.routeName)
       }
+      .layoutWeight(1)
       .width('100%')
       .divider({
         strokeWidth: 0.5,
@@ -300,7 +358,7 @@ struct Index {
         endMargin: 16
       })
     }
-    .title('HarmonyOS 学习示例')
     .mode(NavigationMode.Stack)
+    .hideTitleBar(true)
   }
 }

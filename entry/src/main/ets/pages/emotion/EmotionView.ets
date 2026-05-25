@@ -29,7 +29,6 @@ export struct EmotionView {
       this.getUIContext().setKeyboardAvoidMode(KeyboardAvoidMode.NONE)
 
       window.getLastWindow(context).then((win) => {
-        win.setWindowLayoutFullScreen(true)
         win.on('keyboardHeightChange', this.keyboardHeightChange)
       })
     }

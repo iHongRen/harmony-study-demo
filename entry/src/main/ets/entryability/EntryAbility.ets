@@ -38,10 +38,20 @@ export default class EntryAbility extends UIAbility {
         return;
       }
 
-      // 开启沉浸式全屏
-      windowStage.getMainWindow().then((win) => {
+      try {
+        const win = windowStage.getMainWindowSync()
+        // 开启沉浸式全屏
         win.setWindowLayoutFullScreen(true)
-      })
+
+        const top = win.getWindowAvoidArea(window.AvoidAreaType.TYPE_SYSTEM)
+          .topRect.height
+        const bottom = win.getWindowAvoidArea(window.AvoidAreaType.TYPE_NAVIGATION_INDICATOR)
+          .bottomRect.height
+        AppStorage.setOrCreate('topHeight', win.getUIContext().px2vp(top))
+        AppStorage.setOrCreate('bottomHeight', win.getUIContext().px2vp(bottom))
+      } catch (e) {
+      }
+
 
       hilog.info(DOMAIN, 'testTag', 'Succeeded in loading the content.');
       // 推荐在 DEBUG 模式下使用 - 动态加载
