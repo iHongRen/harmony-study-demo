@@ -315,9 +315,49 @@ harmony-study-demo/
 │   │       │       └── webfont/               # Web字体示例
 │   │       └── resources/      # 模块资源文件
 │   └── oh-package.json5        # 模块依赖配置
+├── scripts/                    # 项目脚本工具
+│   ├── code_counter/           # 代码行数统计脚本
+│   └── find_unused_resources/  # 无用资源扫描脚本（GUI）
 ├── oh_modules/                 # 依赖模块
 ├── build-profile.json5         # 构建配置
 └── oh-package.json5            # 项目依赖配置
+```
+
+## 脚本工具
+
+### 1. code_counter（代码行数统计）
+
+脚本与文档：
+- [code_counter.py](./scripts/code_counter/code_counter.py)
+- [code_counter.md](./scripts/code_counter/code_counter.md)
+
+示例命令：
+
+```bash
+# 统计当前项目
+python3 scripts/code_counter/code_counter.py .
+
+# 仅统计 ArkTS 和 TypeScript
+python3 scripts/code_counter/code_counter.py . --include ArkTS TypeScript
+
+# 输出详细文件明细
+python3 scripts/code_counter/code_counter.py . --show-detail
+```
+
+### 2. find_unused_resources（无用资源扫描）
+
+脚本与文档：
+- [find_unused_resources.py](./scripts/find_unused_resources/find_unused_resources.py)
+- [README.md](./scripts/find_unused_resources/README.md)
+
+示例命令：
+
+```bash
+# 扫描当前目录（默认）
+python3 scripts/find_unused_resources/find_unused_resources.py
+
+# 扫描指定项目目录
+python3 scripts/find_unused_resources/find_unused_resources.py /path/to/harmony-project
 ```
 
 ## 使用说明
@@ -331,7 +371,7 @@ harmony-study-demo/
 
 ## 注意事项
 
-1. 部分功能需要真机测试，模拟器可能不支持（如位置信息等）
+1. 部分功能需要真机测试，模拟器可能不支持
 2. OSS 上传功能需要配置自己的阿里云账号信息
 3. 视频转码功能需要设备支持 AVTranscoder 能力
 4. 使用前请确保已申请相应的权限（位置、相机、存储等）
@@ -363,4 +403,3 @@ harmony-study-demo/
 10、[hm-find-unused-res-tool](https://github.com/iHongRen/hm-find-unused-res-tool) - 鸿蒙无用资源清理工具，一个有UI的 Python 脚本
 
 11、[harmony-study-demo](https://github.com/iHongRen/harmony-study-demo) - HarmonyOS 应用开发学习项目，包含了多个实用的功能示例
-
