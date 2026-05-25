@@ -311,7 +311,7 @@ struct Index {
 
   build() {
     Navigation(this.pathStack) {
-      Navbar({ title: 'HarmonyOS 学习示例' })
+      Navbar({ title: 'HarmonyOS 学习示例', hideBack: true })
 
       List() {
         ForEach(this.demoList, (item: DemoItem) => {
