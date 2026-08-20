@@ -21,7 +21,9 @@ export struct EmotionView {
   @State showType: ShowType = ShowType.None
   @State keybordHeight: number = 314
   @State bottomSafeHeight: number = 34 //TODO：监听avoidAreaChange获取
+  @State list: number[] = [1, 2, 3, 4, 5, 6]
   private controller: RichEditorController = new RichEditorController()
+  private listScroller: ListScroller = new ListScroller()
 
   aboutToAppear(): void {
     const context = this.getUIContext().getHostContext()
@@ -45,6 +47,16 @@ export struct EmotionView {
 
   build() {
     Column() {
+      List({ scroller: this.listScroller }) {
+        ForEach(this.list, (item: number, index: number) => {
+          ListItem() {
+            Text(item.toString()).fontSize(20)
+          }
+          .height(150)
+        })
+      }
+      .layoutWeight(1)
+
       Row({ space: 10 }) {
         RichEditor({
           controller: this.controller
@@ -75,6 +87,7 @@ export struct EmotionView {
             } else {
               this.controller.stopEditing()
               this.showType = ShowType.Emotion
+              this.scrollToBottom()
             }
           })
       }
@@ -120,6 +133,11 @@ export struct EmotionView {
   private keyboardHeightChange = (data: number) => {
     if (data > 0) {
       this.keybordHeight = this.getUIContext().px2vp(data)
+      this.scrollToBottom()
     }
+  }
+
+  private scrollToBottom() {
+    this.listScroller.scrollToIndex(this.list.length - 1)
   }
 }
